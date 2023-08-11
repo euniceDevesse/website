@@ -1,0 +1,240 @@
+
+*{
+  padding:0;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.hero{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#slogan{
+  font-weight: bolder;
+  font-size: 100px;
+  color:white;
+  
+}
+
+.video{
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.display-4 .display-5{
+  color:rgb(217, 216, 216);
+}
+#text{
+  color: rgb(10, 146, 220);
+}
+
+#orange{
+  color: #fd7c2d;
+}
+.lead{
+  color:rgb(135, 131, 131);
+}
+
+.text1{
+  color: rgb(10, 146, 220);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.btn{
+  background-color: rgb(10, 146, 220) ;
+}
+
+.carousel {
+  width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.cards {
+
+  position: relative;
+  height: 500px;
+  width: 430px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.cards label {
+
+  position: absolute;
+  width: 490px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+
+.cards .card{
+
+  position: relative;
+  height: 100%;
+  background-color: #f6f7f8;
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+
+.card .image{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .image img{
+
+  border-radius: 5px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+  margin-top: 23px;
+  width: 90%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card .image{
+
+  text-align: center;
+}
+
+
+
+
+.card .infos{
+
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.infos span{
+
+  display: block;
+}
+
+.infos .name{
+
+  font-size: 30px;
+  color: var(--current-color1);
+  margin-bottom: 10px;
+  transition: all .6s ease;
+}
+
+.infos .lorem{
+
+  font-size: 20px;
+  color: #000;
+  
+}
+
+.card .btn-contact{
+
+  width: 100%;
+  height: 60px;
+  margin: 35px auto;
+  border-radius: 5px;
+  background-color: var(--current-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: all .7s ease;
+}
+
+.card {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(-70%, 0, -220px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(-35%, 0, -120px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+  transform: translate3d(0, 0, 0);
+  --current-color1: rgb(10, 146, 220);
+  --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(35%, 0, -120px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(70%, 0, -220px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
+}
+
+.container1{
+  background-color: rgb(245, 250, 255);
+  height:100vh;
+}
